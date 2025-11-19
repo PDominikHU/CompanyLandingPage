@@ -1,4 +1,20 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"hello_world": "Hello, {name} from hu!"
+	"hello_world": "Hello, {name} from hu!",
+
+	"navbar":{
+		"services": "Szolgáltatások",
+		"portfolio": "Portfólió",
+		"about": "Rólunk",
+		"contact": "Kapcsolat",
+		"ask_offer": "Kérj ajánlatot"
+	},
+	"footer":{
+		"quote":"Keverem a szószom, közben a cigimet tekerem",
+		"links":"Gyors linkek",
+		"home": "Kezdőlap",
+		"services":"Szolgáltatások",
+		"process":"Folyamat",
+		"portfolio":"Portfólió"
+	}
 }
