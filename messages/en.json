@@ -1,20 +1,20 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
 	"hello_world": "Hello, {name} from en!",
-
 	"home": "Home",
 	"services": "Services",
 	"portfolio": "Portfolio",
 	"contact": "Contact",
-
 	"navbar": {
 		"about": "About",
 		"ask_offer": "Request a quote"
 	},
-
 	"footer": {
+		"further_information": "Further Information",
+		"get_in_touch": "Get in Touch",
 		"quote": "To be or not to be, this is the question",
 		"links": "Links",
-		"process": "Process"
+		"process": "Process",
+		"reviews": "Reviews"
 	}
 }

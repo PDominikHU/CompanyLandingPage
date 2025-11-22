@@ -19,9 +19,11 @@
 			<div>
 				<h4 class="mb-4 font-semibold text-white">{m['footer.links']()}</h4>
 				<ul class="space-y-2">
-					<li><a href="/" class="transition-colors hover:text-white">{m.home()}</a></li>
 					<li>
-						<a href="/about" class="transition-colors hover:text-white">{m.services()}</a>
+						<a href="/" class="transition-colors hover:text-white">{m.home()}</a>
+					</li>
+					<li>
+						<a href="/services" class="transition-colors hover:text-white">{m.services()}</a>
 					</li>
 					<li>
 						<a href="/" class="transition-colors hover:text-white">{m['footer.process']()}</a>
@@ -32,17 +34,25 @@
 				</ul>
 			</div>
 			<div>
-				<h4 class="mb-4 font-semibold text-white">További Információk</h4>
+				<h4 class="mb-4 font-semibold text-white">{m['footer.further_information']()}</h4>
 				<ul class="space-y-2">
-					<li><a href="/" class="transition-colors hover:text-white">Vélemények</a></li>
-					<li><a href="/contact" class="transition-colors hover:text-white">{m.contact()}</a></li>
+					<li>
+						<a href="/" class="transition-colors hover:text-white">{m['footer.reviews']()}</a>
+					</li>
+					<li>
+						<a href="/contact" class="transition-colors hover:text-white">{m.contact()}</a>
+					</li>
 				</ul>
 			</div>
 			<div>
-				<h4 class="mb-4 font-semibold text-white">Lépj kapcsolatba</h4>
+				<h4 class="mb-4 font-semibold text-white">{m['footer.get_in_touch']()}</h4>
 				<ul class="space-y-2">
-					<li><a href="/" class="transition-colors hover:text-white">info@example.com</a></li>
-					<li><a href="/about" class="transition-colors hover:text-white">SZABÓ TELEFON</a></li>
+					<li>
+						<a href="/" class="transition-colors hover:text-white">info@example.com</a>
+					</li>
+					<li>
+						<a href="/about" class="transition-colors hover:text-white">SZABÓ TELEFON</a>
+					</li>
 					<li>
 						<a href="/about" class="transition-colors hover:text-white">Pécs, Magyarország</a>
 					</li>
