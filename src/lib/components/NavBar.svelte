@@ -3,7 +3,7 @@
 	import { goto } from '$app/navigation';
 
 	function handleOffer() {
-		goto(m.home());
+		goto('/contact');
 	}
 </script>
 
@@ -34,7 +34,7 @@
 					<span class="underline-animation"></span>
 				</a>
 				<button
-					class="w-half text-1rem rounded-lg bg-gradient-to-r from-sky-500 to-blue-600 px-5 py-2 font-medium text-white transition-all duration-300 hover:from-sky-600 hover:to-blue-700"
+					class="text-1rem w-half rounded-lg bg-gradient-to-r from-sky-500 to-blue-600 px-5 py-2 font-medium text-white transition-all duration-300 hover:from-sky-600 hover:to-blue-700"
 					on:click={handleOffer}
 				>
 					{m['navbar.ask_offer']()}
