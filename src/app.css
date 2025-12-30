@@ -1,2 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
+
+@theme {
+	--color-primary: #136dec;
+	--color-background-light: #f6f7f8;
+	--color-background-dark: #101822;
+	--color-surface-dark: #1a232e;
+	--color-accent: #eef5ff;
+
+	--font-display: 'Inter', 'sans-serif';
+
+	--radius-default: 0.25rem;
+	--radius-lg: 0.5rem;
+	--radius-xl: 0.75rem;
+	--radius-full: 9999px;
+}
+
+@layer utilities {
+	@keyframes soft-glow {
+		0% {
+			box-shadow: 0 0 0 0 rgba(19, 109, 236, 0.4);
+		}
+		70% {
+			box-shadow: 0 0 0 15px rgba(19, 109, 236, 0);
+		}
+		100% {
+			box-shadow: 0 0 0 0 rgba(19, 109, 236, 0);
+		}
+	}
+
+	.animate-glow {
+		animation: soft-glow 3s infinite;
+	}
+}
+
+@layer base {
+	html {
+		scrollbar-width: thin;
+		scrollbar-color: #136dec #092330;
+	}
+
+	::-webkit-scrollbar {
+		width: 8px;
+		height: 8px;
+	}
+
+	::-webkit-scrollbar-track {
+		background: #092330;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: #136dec;
+		border-radius: 10px;
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		background: #0ea5e9;
+	}
+}
+
+:global(html),
+:global(body) {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}

@@ -1,20 +1,80 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"hello_world": "Helló, {name} hu-ból!",
 	"home": "Kezdőlap",
 	"services": "Szolgáltatások",
 	"portfolio": "Portfólió",
 	"contact": "Kapcsolat",
+	"about": "Rólunk",
 	"navbar": {
-		"about": "Rólunk",
 		"ask_offer": "Kérj ajánlatot"
 	},
+	"hero": {
+		"title": "Digitális Növekedést Építünk",
+		"subtitle": "Modern, professzionális weboldalakat készítünk, amelyek valódi üzleti eredményeket hoznak. Segítünk, hogy vállalkozása kiemelkedjen a digitális térben."
+	},
+	"mission": {
+		"title": "Küldetésünk",
+		"text": "Azért alapítottuk cégünket, mert hiszünk abban, hogy minden kis- és középvállalkozás megérdemli a professzionális online jelenlétet. Célunk, hogy a legmodernebb technológiákat és üzleti szemléletű megoldásokat kínálva, hosszú távú, megbízható partnerei legyünk ügyfeleinknek digitális útjukon."
+	},
+	"values": {
+		"title": "Értékeink",
+		"subtitle": "A munkánk során ezek az alapelvek vezérelnek minket minden projektben.",
+		"prof": {
+			"title": "Professzionalizmus",
+			"desc": "Minden projektet a legmagasabb szakmai színvonalon valósítunk meg."
+		},
+		"trust": {
+			"title": "Megbízhatóság",
+			"desc": "Tartjuk a határidőket és az ígéreteinket. Ügyfeleink számíthatnak ránk."
+		},
+		"transp": {
+			"title": "Átláthatóság",
+			"desc": "Nyíltan kommunikálunk a folyamatokról és a költségekről."
+		},
+		"client": {
+			"title": "Ügyfélközpontúság",
+			"desc": "Az ügyfél üzleti céljai a legfontosabbak számunkra."
+		},
+		"innov": {
+			"title": "Innováció",
+			"desc": "Folyamatosan keressük a legújabb, leghatékonyabb megoldásokat."
+		}
+	},
+	"team": {
+		"title": "Csapatunk",
+		"subtitle": "Szenvedélyes szakértők csapata, akik elkötelezettek az Ön sikeréért."
+	},
+	"whyus": {
+		"title": "Miért minket válasszon?",
+		"subtitle": "Nem csak egy weboldalt készítünk, hanem egy hatékony üzleti eszközt, amely ügyfeleket hoz.",
+		"card1_t": "Gyors, reszponzív weboldalak",
+		"card1_d": "Minden eszközön tökéletes élményt nyújtó, villámgyors oldalakat építünk.",
+		"card2_t": "Modern design",
+		"card2_d": "Letisztult, felhasználóbarát és esztétikus megjelenést garantálunk.",
+		"card3_t": "Több ügyfél",
+		"card3_d": "Egy professzionális weboldal bizalmat épít és konverziót generál.",
+		"card4_t": "Komplex támogatás",
+		"card4_d": "Az átadást követően is segítünk a karbantartásban és a fejlesztésben.",
+		"card5_t": "Üzleti fókusz",
+		"card5_d": "Megértjük üzleti céljait, és a weboldalt ezek elérésére optimalizáljuk.",
+		"card6_t": "SEO optimalizálás",
+		"card6_d": "Technikailag felkészítjük oldalát, hogy a Google is szeresse."
+	},
+	"cta": {
+		"title": "Készen áll a digitális szintre lépésre?",
+		"subtitle": "Beszéljük meg elképzeléseit egy ingyenes konzultáció keretében, és építsünk valami maradandót!",
+		"button": "Ingyenes konzultáció kérése",
+		"call": "vagy hívjon minket bizalommal"
+	},
 	"footer": {
-		"further_information": "További Információk",
-		"get_in_touch": "Lépj kapcsolatba",
 		"quote": "Keverem a szószom, közben a cigimet tekerem",
 		"links": "Gyors linkek",
+		"further_information": "További Információk",
+		"get_in_touch": "Lépj kapcsolatba",
 		"process": "Folyamat",
-		"reviews": "Vélemények"
+		"reviews": "Vélemények",
+		"rights": "Minden jog fenntartva",
+		"privacy": "Adatvédelem",
+		"terms": "Felhasználási feltételek"
 	}
 }
