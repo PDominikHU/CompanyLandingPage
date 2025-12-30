@@ -1,43 +1,56 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"hello_world": "Hello, {name} from hu!",
 	"home": "Home",
 	"services": "Services",
 	"portfolio": "Portfolio",
 	"contact": "Contact",
-	"about": "About Us",
 	"navbar": {
-		"ask_offer": "Request a quote"
+		"about": "About Us",
+		"ask_offer": "HUN"
 	},
+	"footer": {
+		"further_information": "Further Information",
+		"get_in_touch": "Get in Touch",
+		"quote": "I'm mixing my sauce while rolling my cigarette",
+		"links": "Quick Links",
+		"process": "Process",
+		"reviews": "Reviews",
+		"rights": "All rights reserved",
+		"privacy": "Privacy Policy",
+		"terms": "Terms and Conditions"
+	},
+	"about": "About Us",
 	"hero": {
 		"title": "Building Digital Growth",
-		"subtitle": "We create modern, professional websites that bring real business results. We help your business stand out in the digital space."
+		"subtitle": "We create modern, professional websites that deliver real business results. We help your business stand out in the digital space."
 	},
 	"mission": {
 		"title": "Our Mission",
-		"text": "We founded our company because we believe that every small and medium-sized business deserves a professional online presence. Our goal is to be a long-term, reliable partner on your digital journey."
+		"text": "We founded our company because we believe that every small and medium-sized business deserves a professional online presence. Our goal is to be a long-term, reliable partner for our clients on their digital journey by offering the latest technologies and business-oriented solutions."
 	},
 	"values": {
 		"title": "Our Values",
-		"subtitle": "These principles guide us in every project we undertake.",
+		"subtitle": "These principles guide us in every project during our work.",
 		"prof": {
 			"title": "Professionalism",
 			"desc": "We implement every project at the highest professional standard."
 		},
 		"trust": {
 			"title": "Reliability",
-			"desc": "We keep deadlines and promises. Our clients can count on us."
+			"desc": "We keep our deadlines and promises. Our clients can count on us."
 		},
 		"transp": {
 			"title": "Transparency",
 			"desc": "We communicate openly about processes and costs."
 		},
 		"client": {
-			"title": "Client Focus",
-			"desc": "Our client's business goals are our top priority."
+			"title": "Client-Centricity",
+			"desc": "Our client's business goals are the most important to us."
 		},
 		"innov": {
 			"title": "Innovation",
-			"desc": "We are constantly looking for the latest, most effective solutions."
+			"desc": "We are constantly looking for the newest and most effective solutions."
 		}
 	},
 	"team": {
@@ -46,35 +59,24 @@
 	},
 	"whyus": {
 		"title": "Why Choose Us?",
-		"subtitle": "We don't just build a website, but an effective business tool that brings clients.",
+		"subtitle": "We don't just build a website, but an effective business tool that brings in customers.",
 		"card1_t": "Fast, Responsive Websites",
 		"card1_d": "We build lightning-fast sites that provide a perfect experience on all devices.",
 		"card2_t": "Modern Design",
 		"card2_d": "We guarantee a clean, user-friendly, and aesthetic appearance.",
-		"card3_t": "More Clients",
+		"card3_t": "More Customers",
 		"card3_d": "A professional website builds trust and generates conversions.",
 		"card4_t": "Complex Support",
-		"card4_d": "We help with maintenance and development even after the handover.",
+		"card4_d": "We assist with maintenance and development even after the handover.",
 		"card5_t": "Business Focus",
-		"card5_d": "We understand your goals and optimize the site to achieve them.",
+		"card5_d": "We understand your business goals and optimize the website to achieve them.",
 		"card6_t": "SEO Optimization",
-		"card6_d": "We technically prepare your site so Google loves it too."
+		"card6_d": "We prepare your site technically so that Google will love it too."
 	},
 	"cta": {
-		"title": "Ready to Step Up Your Digital Game?",
+		"title": "Ready to step up to the digital level?",
 		"subtitle": "Let's discuss your ideas in a free consultation and build something lasting!",
 		"button": "Request a Free Consultation",
 		"call": "or call us with confidence"
-	},
-	"footer": {
-		"quote": "To be or not to be, this is the question",
-		"links": "Quick Links",
-		"further_information": "Further Information",
-		"get_in_touch": "Get in Touch",
-		"process": "Process",
-		"reviews": "Reviews",
-		"rights": "All rights reserved",
-		"privacy": "Privacy Policy",
-		"terms": "Terms of Use"
 	}
 }

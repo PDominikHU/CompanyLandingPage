@@ -1,13 +1,27 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"hello_world": "Helló, {name} hu-ból!",
 	"home": "Kezdőlap",
 	"services": "Szolgáltatások",
 	"portfolio": "Portfólió",
 	"contact": "Kapcsolat",
-	"about": "Rólunk",
 	"navbar": {
-		"ask_offer": "Kérj ajánlatot"
+		"about": "Rólunk",
+		"ask_offer": "ENG",
+		"lang": "Kérj ajánlatot"
 	},
+	"footer": {
+		"further_information": "További Információk",
+		"get_in_touch": "Lépj kapcsolatba",
+		"quote": "Keverem a szószom, közben a cigimet tekerem",
+		"links": "Gyors linkek",
+		"process": "Folyamat",
+		"reviews": "Vélemények",
+		"rights": "Minden jog fenntartva",
+		"privacy": "Adatvédelem",
+		"terms": "Felhasználási feltételek"
+	},
+	"about": "Rólunk",
 	"hero": {
 		"title": "Digitális Növekedést Építünk",
 		"subtitle": "Modern, professzionális weboldalakat készítünk, amelyek valódi üzleti eredményeket hoznak. Segítünk, hogy vállalkozása kiemelkedjen a digitális térben."
@@ -65,16 +79,5 @@
 		"subtitle": "Beszéljük meg elképzeléseit egy ingyenes konzultáció keretében, és építsünk valami maradandót!",
 		"button": "Ingyenes konzultáció kérése",
 		"call": "vagy hívjon minket bizalommal"
-	},
-	"footer": {
-		"quote": "Keverem a szószom, közben a cigimet tekerem",
-		"links": "Gyors linkek",
-		"further_information": "További Információk",
-		"get_in_touch": "Lépj kapcsolatba",
-		"process": "Folyamat",
-		"reviews": "Vélemények",
-		"rights": "Minden jog fenntartva",
-		"privacy": "Adatvédelem",
-		"terms": "Felhasználási feltételek"
 	}
 }

@@ -47,6 +47,10 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Egyedi digitális megoldások | Company</title>
+</svelte:head>
+
 <section class="relative overflow-hidden">
 	<div class="absolute inset-0 bg-background-light dark:bg-background-dark"></div>
 	<div class="relative mx-auto max-w-6xl px-4 py-20 sm:px-6 md:py-32 lg:px-8">
