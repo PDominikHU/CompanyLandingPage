@@ -2,69 +2,62 @@
 	import * as m from '$lib/paraglide/messages';
 </script>
 
-<footer class="text-1rem bg-[#092330] text-[#70828c]">
-	<div class="mx-auto max-w-7xl">
-		<div class="grid gap-8 md:grid-cols-4">
-			<div>
-				<ul class="space-y-2">
-					<li><a href="/">Logo</a></li>
-					<li>{m['footer.quote']()}</li>
-					<li>
-						<a href="/" class="transition-colors hover:text-white">Facebook</a>
-						<a href="/" class="transition-colors hover:text-white">Instagram</a>
-						<a href="/" class="transition-colors hover:text-white">Linkedin</a>
-					</li>
-				</ul>
+<footer class="mt-auto w-full bg-[#092330] pt-16 pb-8 text-sm text-gray-400">
+	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+		<div class="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+			<div class="flex flex-col gap-6">
+				<a href="/" class="text-2xl font-black text-white">LOGO</a>
+				<p class="max-w-xs leading-relaxed">{m['footer.quote']()}</p>
 			</div>
+
 			<div>
-				<h4 class="mb-4 font-semibold text-white">{m['footer.links']()}</h4>
-				<ul class="space-y-2">
+				<h4 class="mb-6 font-bold tracking-wider text-white uppercase">{m['footer.links']()}</h4>
+				<ul class="space-y-4">
+					<li><a href="/" class="transition-colors hover:text-white">{m.home()}</a></li>
+					<li><a href="/services" class="transition-colors hover:text-white">{m.services()}</a></li>
 					<li>
-						<a href="/" class="transition-colors hover:text-white">{m.home()}</a>
-					</li>
-					<li>
-						<a href="/services" class="transition-colors hover:text-white">{m.services()}</a>
+						<a href="/portfolio" class="transition-colors hover:text-white">{m.portfolio()}</a>
 					</li>
 					<li>
 						<a href="/" class="transition-colors hover:text-white">{m['footer.process']()}</a>
 					</li>
-					<li>
-						<a href="/portfolio" class="transition-colors hover:text-white">{m.portfolio()}</a>
-					</li>
 				</ul>
 			</div>
+
 			<div>
-				<h4 class="mb-4 font-semibold text-white">{m['footer.further_information']()}</h4>
-				<ul class="space-y-2">
+				<h4 class="mb-6 font-bold tracking-wider text-white uppercase">
+					{m['footer.further_information']()}
+				</h4>
+				<ul class="space-y-4">
 					<li>
 						<a href="/" class="transition-colors hover:text-white">{m['footer.reviews']()}</a>
 					</li>
-					<li>
-						<a href="/contact" class="transition-colors hover:text-white">{m.contact()}</a>
-					</li>
+					<li><a href="/contact" class="transition-colors hover:text-white">{m.contact()}</a></li>
 				</ul>
 			</div>
+
 			<div>
-				<h4 class="mb-4 font-semibold text-white">{m['footer.get_in_touch']()}</h4>
-				<ul class="space-y-2">
-					<li>
-						<a href="/" class="transition-colors hover:text-white">info@example.com</a>
+				<h4 class="mb-6 font-bold tracking-wider text-white uppercase">
+					{m['footer.get_in_touch']()}
+				</h4>
+				<ul class="space-y-4">
+					<li class="flex items-center gap-3">
+						✉ <a href="mailto:info@example.com" class="transition-colors hover:text-white"
+							>info@example.com</a
+						>
 					</li>
-					<li>
-						<a href="/about" class="transition-colors hover:text-white">SZABÓ TELEFON</a>
-					</li>
-					<li>
-						<a href="/about" class="transition-colors hover:text-white">Pécs, Magyarország</a>
-					</li>
+					<li class="flex items-center gap-3">📍 Pécs, Magyarország</li>
 				</ul>
 			</div>
-			<div class="col-span-4 my-4 h-px w-full rounded bg-[#233742]"></div>
-			<div class="col-span-4 flex justify-between">
-				<div>@2025 Minden jog fenntartva.</div>
-				<div class="justify between flex space-x-6">
-					<div><a href="/">Adatvédelem</a></div>
-					<div><a href="/">Felhasználási feltételek</a></div>
-				</div>
+		</div>
+
+		<div
+			class="mt-16 flex flex-col items-center justify-between gap-4 border-t border-gray-800 pt-8 md:flex-row"
+		>
+			<p class="text-xs">© 2025 {m['footer.rights']()}.</p>
+			<div class="flex space-x-8 text-xs">
+				<a href="/" class="transition-colors hover:text-white">{m['footer.privacy']()}</a>
+				<a href="/" class="transition-colors hover:text-white">{m['footer.terms']()}</a>
 			</div>
 		</div>
 	</div>

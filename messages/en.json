@@ -1,20 +1,80 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"hello_world": "Hello, {name} from en!",
 	"home": "Home",
 	"services": "Services",
 	"portfolio": "Portfolio",
 	"contact": "Contact",
+	"about": "About Us",
 	"navbar": {
-		"about": "About",
 		"ask_offer": "Request a quote"
 	},
+	"hero": {
+		"title": "Building Digital Growth",
+		"subtitle": "We create modern, professional websites that bring real business results. We help your business stand out in the digital space."
+	},
+	"mission": {
+		"title": "Our Mission",
+		"text": "We founded our company because we believe that every small and medium-sized business deserves a professional online presence. Our goal is to be a long-term, reliable partner on your digital journey."
+	},
+	"values": {
+		"title": "Our Values",
+		"subtitle": "These principles guide us in every project we undertake.",
+		"prof": {
+			"title": "Professionalism",
+			"desc": "We implement every project at the highest professional standard."
+		},
+		"trust": {
+			"title": "Reliability",
+			"desc": "We keep deadlines and promises. Our clients can count on us."
+		},
+		"transp": {
+			"title": "Transparency",
+			"desc": "We communicate openly about processes and costs."
+		},
+		"client": {
+			"title": "Client Focus",
+			"desc": "Our client's business goals are our top priority."
+		},
+		"innov": {
+			"title": "Innovation",
+			"desc": "We are constantly looking for the latest, most effective solutions."
+		}
+	},
+	"team": {
+		"title": "Our Team",
+		"subtitle": "A team of passionate experts dedicated to your success."
+	},
+	"whyus": {
+		"title": "Why Choose Us?",
+		"subtitle": "We don't just build a website, but an effective business tool that brings clients.",
+		"card1_t": "Fast, Responsive Websites",
+		"card1_d": "We build lightning-fast sites that provide a perfect experience on all devices.",
+		"card2_t": "Modern Design",
+		"card2_d": "We guarantee a clean, user-friendly, and aesthetic appearance.",
+		"card3_t": "More Clients",
+		"card3_d": "A professional website builds trust and generates conversions.",
+		"card4_t": "Complex Support",
+		"card4_d": "We help with maintenance and development even after the handover.",
+		"card5_t": "Business Focus",
+		"card5_d": "We understand your goals and optimize the site to achieve them.",
+		"card6_t": "SEO Optimization",
+		"card6_d": "We technically prepare your site so Google loves it too."
+	},
+	"cta": {
+		"title": "Ready to Step Up Your Digital Game?",
+		"subtitle": "Let's discuss your ideas in a free consultation and build something lasting!",
+		"button": "Request a Free Consultation",
+		"call": "or call us with confidence"
+	},
 	"footer": {
+		"quote": "To be or not to be, this is the question",
+		"links": "Quick Links",
 		"further_information": "Further Information",
 		"get_in_touch": "Get in Touch",
-		"quote": "To be or not to be, this is the question",
-		"links": "Links",
 		"process": "Process",
-		"reviews": "Reviews"
+		"reviews": "Reviews",
+		"rights": "All rights reserved",
+		"privacy": "Privacy Policy",
+		"terms": "Terms of Use"
 	}
 }

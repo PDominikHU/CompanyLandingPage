@@ -8,11 +8,20 @@
 	let { children } = $props();
 </script>
 
-<NavBar />
 <svelte:head>
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-{@render children()}
+<div class="flex min-h-screen flex-col">
+	<NavBar />
+	<main class="flex-1">
+		{@render children()}
+	</main>
+	<Footer />
+</div>
 
-<Footer />
+<style>
+	:global(body) {
+		font-family: 'Inter', sans-serif;
+	}
+</style>
