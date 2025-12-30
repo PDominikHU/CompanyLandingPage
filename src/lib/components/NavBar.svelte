@@ -1,8 +1,8 @@
 <script lang="ts">
 	import * as m from '$lib/paraglide/messages';
-	import { goto } from '$app/navigation';
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 	import { slide } from 'svelte/transition';
+	import { setLocale, localizeHref, getLocale } from '$lib/paraglide/runtime.js';
 
 	let isMobileMenuOpen = $state(false);
 
@@ -14,9 +14,14 @@
 		isMobileMenuOpen = false;
 	}
 
-	function handleOffer() {
+	let currentLocale = $derived(getLocale());
+	let isEnglish = $derived(currentLocale === 'en');
+
+	function handleLanguageToggle(e: Event) {
+		const target = e.target as HTMLInputElement;
+		const newLocale = target.checked ? 'en' : 'hu';
+		setLocale(newLocale);
 		closeMenu();
-		goto('/contact');
 	}
 </script>
 
@@ -26,33 +31,65 @@
 	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 		<div class="flex h-16 items-center justify-between">
 			<div class="shrink-0">
-				<a href="/" class="text-xl font-black text-primary" onclick={closeMenu}>LOGO</a>
+				<a href={localizeHref('/')} class="text-xl font-black text-primary" onclick={closeMenu}
+					>LOGO</a
+				>
 			</div>
 
 			<div class="hidden items-center space-x-2 md:flex">
-				<a href="/services" class="nav-link" class:active={$page.url.pathname.includes('services')}>
+				<a
+					href={localizeHref('/services')}
+					class="nav-link"
+					class:active={page.url.pathname.includes('services')}
+				>
 					{m.services()}
 					<span class="underline-animation"></span>
 				</a>
 				<a
-					href="/portfolio"
+					href={localizeHref('/portfolio')}
 					class="nav-link"
-					class:active={$page.url.pathname.includes('portfolio')}
+					class:active={page.url.pathname.includes('portfolio')}
 				>
 					{m.portfolio()}
 					<span class="underline-animation"></span>
 				</a>
-				<a href="/contact" class="nav-link" class:active={$page.url.pathname.includes('contact')}>
+				<a
+					href={localizeHref('/contact')}
+					class="nav-link"
+					class:active={page.url.pathname.includes('contact')}
+				>
 					{m.contact()}
 					<span class="underline-animation"></span>
 				</a>
 
-				<button
-					class="ml-4 cursor-pointer rounded-lg bg-primary px-6 py-2.5 text-sm font-bold text-white transition-all hover:scale-105 hover:bg-primary/90 active:scale-95"
-					onclick={handleOffer}
-				>
-					{m['navbar.ask_offer']()}
-				</button>
+				<div class="flex items-center">
+					<img
+						src="/images/flags/hungary.svg"
+						alt="HU"
+						class="h-5 w-5 transition-opacity {isEnglish ? 'opacity-40' : 'opacity-100'}"
+					/>
+
+					<label class="relative mx-3 inline-flex cursor-pointer items-center">
+						<input
+							type="checkbox"
+							class="peer sr-only"
+							checked={isEnglish}
+							onchange={handleLanguageToggle}
+						/>
+						<div
+							class="h-6 w-11 rounded-full bg-gray-300 transition-colors duration-300 peer-checked:bg-blue-600 dark:bg-gray-600"
+						></div>
+						<div
+							class="absolute start-0.5 top-0.5 h-5 w-5 rounded-full border bg-white transition-all duration-300 peer-checked:translate-x-5 peer-checked:border-white dark:border-gray-300"
+						></div>
+					</label>
+
+					<img
+						src="/images/flags/uk.svg"
+						alt="EN"
+						class="h-5 w-5 transition-opacity {!isEnglish ? 'opacity-40' : 'opacity-100'}"
+					/>
+				</div>
 			</div>
 
 			<div class="flex md:hidden">
@@ -90,16 +127,61 @@
 			class="overflow-hidden border-b border-gray-100 bg-white md:hidden dark:border-gray-800 dark:bg-background-dark"
 		>
 			<div class="flex flex-col gap-1 px-4 pt-2 pb-6">
-				<a href="/services" class="mobile-link" onclick={closeMenu}>{m.services()}</a>
-				<a href="/portfolio" class="mobile-link" onclick={closeMenu}>{m.portfolio()}</a>
-				<a href="/contact" class="mobile-link" onclick={closeMenu}>{m.contact()}</a>
-
-				<button
-					class="mt-4 w-full cursor-pointer rounded-lg bg-primary py-4 text-base font-bold text-white shadow-lg shadow-primary/20"
-					onclick={handleOffer}
+				<a
+					href={localizeHref('/services')}
+					class="mobile-link"
+					class:active={page.url.pathname.includes('services')}
+					onclick={closeMenu}>{m.services()}</a
 				>
-					{m['navbar.ask_offer']()}
-				</button>
+				<a
+					href={localizeHref('/portfolio')}
+					class="mobile-link"
+					class:active={page.url.pathname.includes('portfolio')}
+					onclick={closeMenu}>{m.portfolio()}</a
+				>
+				<a
+					href={localizeHref('/contact')}
+					class="mobile-link"
+					class:active={page.url.pathname.includes('contact')}
+					onclick={closeMenu}>{m.contact()}</a
+				>
+
+				<div class="my-4 border-t border-gray-100 dark:border-gray-800"></div>
+
+				<div class="flex items-center justify-between px-2">
+					<span class="text-sm font-medium text-gray-600 dark:text-gray-400">
+						{isEnglish ? 'Language' : 'Nyelv'}
+					</span>
+
+					<div class="flex items-center">
+						<img
+							src="/images/flags/hungary.svg"
+							alt="HU"
+							class="h-6 w-6 transition-opacity {isEnglish ? 'opacity-40' : 'opacity-100'}"
+						/>
+
+						<label class="relative mx-3 inline-flex cursor-pointer items-center">
+							<input
+								type="checkbox"
+								class="peer sr-only"
+								checked={isEnglish}
+								onchange={handleLanguageToggle}
+							/>
+							<div
+								class="h-6 w-11 rounded-full bg-gray-200 transition-colors duration-300 peer-checked:bg-blue-600 dark:bg-gray-700"
+							></div>
+							<div
+								class="absolute start-0.5 top-0.5 h-5 w-5 rounded-full border bg-white transition-all duration-300 peer-checked:translate-x-5 peer-checked:border-white dark:border-gray-300"
+							></div>
+						</label>
+
+						<img
+							src="/images/flags/uk.svg"
+							alt="EN"
+							class="h-6 w-6 transition-opacity {!isEnglish ? 'opacity-40' : 'opacity-100'}"
+						/>
+					</div>
+				</div>
 			</div>
 		</div>
 	{/if}
@@ -150,8 +232,14 @@
 		border-bottom: 1px solid #f3f4f6;
 		color: #374151;
 	}
+	.mobile-link.active {
+		color: #136dec;
+	}
 	:global(.dark) .mobile-link {
 		color: #ffffff;
 		border-bottom-color: #1f2937;
+	}
+	:global(.dark) .mobile-link.active {
+		color: #3b82f6;
 	}
 </style>
