@@ -158,7 +158,7 @@
 
 <section
 	data-section="team"
-	class="border-t border-gray-100 bg-wite py-16 md:py-24 dark:border-gray-800 dark:bg-surface-dark"
+	class="bg-wite border-t border-gray-100 py-16 md:py-24 dark:border-gray-800 dark:bg-surface-dark"
 >
 	<div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
 		<div class="mb-12 text-center">

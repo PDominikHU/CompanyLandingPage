@@ -18,10 +18,10 @@
 	let isEnglish = $derived(currentLocale === 'en');
 
 	function handleLanguageToggle() {
-    const newLocale = isEnglish ? 'hu' : 'en';
-    setLocale(newLocale);
-    closeMenu();
-}
+		const newLocale = isEnglish ? 'hu' : 'en';
+		setLocale(newLocale);
+		closeMenu();
+	}
 </script>
 
 <nav
@@ -61,16 +61,16 @@
 					<span class="underline-animation"></span>
 				</a>
 
-				<button 
-					onclick={handleLanguageToggle} 
-					class="flex items-center justify-center p-1 transition-transform duration-200 hover:scale-110 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-md"
-					aria-label={isEnglish ? "Váltás magyarra" : "Switch to English"}
-					title={isEnglish ? "Váltás magyarra" : "Switch to English"}
+				<button
+					onclick={handleLanguageToggle}
+					class="flex items-center justify-center rounded-md p-1 transition-transform duration-200 hover:scale-110 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+					aria-label={isEnglish ? 'Váltás magyarra' : 'Switch to English'}
+					title={isEnglish ? 'Váltás magyarra' : 'Switch to English'}
 				>
 					<img
-						src={isEnglish ? "/images/flags/hungary.svg" : "/images/flags/uk.svg"}
-						alt={isEnglish ? "Magyar" : "English"}
-						class="h-6 w-6 shadow-sm rounded-sm object-cover"
+						src={isEnglish ? '/images/flags/hungary.svg' : '/images/flags/uk.svg'}
+						alt={isEnglish ? 'Magyar' : 'English'}
+						class="h-6 w-6 rounded-sm object-cover shadow-sm"
 					/>
 				</button>
 			</div>
@@ -136,18 +136,18 @@
 						{isEnglish ? 'Language' : 'Nyelv'}
 					</span>
 
-					<button 
-					onclick={handleLanguageToggle} 
-					class="flex items-center justify-center p-1 transition-transform duration-200 hover:scale-110 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-md"
-					aria-label={isEnglish ? "Váltás magyarra" : "Switch to English"}
-					title={isEnglish ? "Váltás magyarra" : "Switch to English"}
-				>
-					<img
-						src={isEnglish ? "/images/flags/hungary.svg" : "/images/flags/uk.svg"}
-						alt={isEnglish ? "Magyar" : "English"}
-						class="h-6 w-6 shadow-sm rounded-sm object-cover"
-					/>
-				</button>
+					<button
+						onclick={handleLanguageToggle}
+						class="flex items-center justify-center rounded-md p-1 transition-transform duration-200 hover:scale-110 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+						aria-label={isEnglish ? 'Váltás magyarra' : 'Switch to English'}
+						title={isEnglish ? 'Váltás magyarra' : 'Switch to English'}
+					>
+						<img
+							src={isEnglish ? '/images/flags/hungary.svg' : '/images/flags/uk.svg'}
+							alt={isEnglish ? 'Magyar' : 'English'}
+							class="h-6 w-6 rounded-sm object-cover shadow-sm"
+						/>
+					</button>
 				</div>
 			</div>
 		</div>
