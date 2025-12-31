@@ -17,12 +17,11 @@
 	let currentLocale = $derived(getLocale());
 	let isEnglish = $derived(currentLocale === 'en');
 
-	function handleLanguageToggle(e: Event) {
-		const target = e.target as HTMLInputElement;
-		const newLocale = target.checked ? 'en' : 'hu';
-		setLocale(newLocale);
-		closeMenu();
-	}
+	function handleLanguageToggle() {
+    const newLocale = isEnglish ? 'hu' : 'en';
+    setLocale(newLocale);
+    closeMenu();
+}
 </script>
 
 <nav
@@ -62,34 +61,18 @@
 					<span class="underline-animation"></span>
 				</a>
 
-				<div class="flex items-center">
+				<button 
+					onclick={handleLanguageToggle} 
+					class="flex items-center justify-center p-1 transition-transform duration-200 hover:scale-110 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-md"
+					aria-label={isEnglish ? "Váltás magyarra" : "Switch to English"}
+					title={isEnglish ? "Váltás magyarra" : "Switch to English"}
+				>
 					<img
-						src="/images/flags/hungary.svg"
-						alt="HU"
-						class="h-5 w-5 transition-opacity {isEnglish ? 'opacity-40' : 'opacity-100'}"
+						src={isEnglish ? "/images/flags/hungary.svg" : "/images/flags/uk.svg"}
+						alt={isEnglish ? "Magyar" : "English"}
+						class="h-6 w-6 shadow-sm rounded-sm object-cover"
 					/>
-
-					<label class="relative mx-3 inline-flex cursor-pointer items-center">
-						<input
-							type="checkbox"
-							class="peer sr-only"
-							checked={isEnglish}
-							onchange={handleLanguageToggle}
-						/>
-						<div
-							class="h-6 w-11 rounded-full bg-gray-300 transition-colors duration-300 peer-checked:bg-blue-600 dark:bg-gray-600"
-						></div>
-						<div
-							class="absolute start-0.5 top-0.5 h-5 w-5 rounded-full border bg-white transition-all duration-300 peer-checked:translate-x-5 peer-checked:border-white dark:border-gray-300"
-						></div>
-					</label>
-
-					<img
-						src="/images/flags/uk.svg"
-						alt="EN"
-						class="h-5 w-5 transition-opacity {!isEnglish ? 'opacity-40' : 'opacity-100'}"
-					/>
-				</div>
+				</button>
 			</div>
 
 			<div class="flex md:hidden">
@@ -153,34 +136,18 @@
 						{isEnglish ? 'Language' : 'Nyelv'}
 					</span>
 
-					<div class="flex items-center">
-						<img
-							src="/images/flags/hungary.svg"
-							alt="HU"
-							class="h-6 w-6 transition-opacity {isEnglish ? 'opacity-40' : 'opacity-100'}"
-						/>
-
-						<label class="relative mx-3 inline-flex cursor-pointer items-center">
-							<input
-								type="checkbox"
-								class="peer sr-only"
-								checked={isEnglish}
-								onchange={handleLanguageToggle}
-							/>
-							<div
-								class="h-6 w-11 rounded-full bg-gray-200 transition-colors duration-300 peer-checked:bg-blue-600 dark:bg-gray-700"
-							></div>
-							<div
-								class="absolute start-0.5 top-0.5 h-5 w-5 rounded-full border bg-white transition-all duration-300 peer-checked:translate-x-5 peer-checked:border-white dark:border-gray-300"
-							></div>
-						</label>
-
-						<img
-							src="/images/flags/uk.svg"
-							alt="EN"
-							class="h-6 w-6 transition-opacity {!isEnglish ? 'opacity-40' : 'opacity-100'}"
-						/>
-					</div>
+					<button 
+					onclick={handleLanguageToggle} 
+					class="flex items-center justify-center p-1 transition-transform duration-200 hover:scale-110 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-md"
+					aria-label={isEnglish ? "Váltás magyarra" : "Switch to English"}
+					title={isEnglish ? "Váltás magyarra" : "Switch to English"}
+				>
+					<img
+						src={isEnglish ? "/images/flags/hungary.svg" : "/images/flags/uk.svg"}
+						alt={isEnglish ? "Magyar" : "English"}
+						class="h-6 w-6 shadow-sm rounded-sm object-cover"
+					/>
+				</button>
 				</div>
 			</div>
 		</div>
