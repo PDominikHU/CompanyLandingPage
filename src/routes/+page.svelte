@@ -57,7 +57,7 @@
 		<div class="flex min-h-[480px] flex-col items-center justify-center gap-6 text-center">
 			{#if mounted}
 				<h1
-					in:typewriter={{ speed: 1 }}
+					in:typewriter={{ speed: 2.5 }}
 					class="text-4xl leading-tight font-black tracking-wide text-gray-900 sm:text-5xl md:text-6xl dark:text-white"
 				>
 					{m['hero.title']()}
@@ -68,7 +68,7 @@
 				>
 					{m['hero.subtitle']()}
 				</h2>
-				<div in:fade={{ delay: 1200 }} class="mt-4 flex flex-wrap justify-center gap-4">
+				<div in:fade={{ delay: 1000 }} class="mt-4 flex flex-wrap justify-center gap-4">
 					<button
 						class="animate-glow flex h-12 min-w-40 cursor-pointer items-center justify-center rounded-lg bg-primary px-5 text-base font-bold text-white transition-all hover:scale-105 hover:bg-primary/90"
 					>
