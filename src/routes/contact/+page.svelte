@@ -2,4 +2,4 @@
 	<title>Kapcsolat</title>
 </svelte:head>
 
-<h1>Kontakt oldal</h1>
+<h1>Kapcsolat</h1>
