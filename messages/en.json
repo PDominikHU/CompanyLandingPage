@@ -4,7 +4,23 @@
 	"home": "Home",
 	"services": "Services",
 	"portfolio": "Portfolio",
-	"contact": "Contact",
+	"contactPage": {
+		"title": "Lépjünk kapcsolatba!",
+		"subtitle": "Kérdésed van? Projektet indítanál? Írj bátran!",
+		"nameLabel": "Név",
+		"namePlaceholder": "Teljes név",
+		"emailLabel": "Email cím",
+		"emailPlaceholder": "pelda@gmail.com",
+		"messageLabel": "Üzenet",
+		"messagePlaceholder": "Miben segíthetünk?",
+		"btnSubmit": "Üzenet küldése",
+		"btnSending": "Küldés...",
+		"btnSent": "Elküldve",
+		"successMsg": "Köszönjük! Hamarosan keresünk.",
+		"errorMsg": "Hiba történt a küldés során.",
+		"phoneLabel": "Phone number",
+		"phonePlaceholder": "+36 20 123 4567"
+	},
 	"navbar": {
 		"about": "About Us",
 		"ask_offer": "HUN"

@@ -5,6 +5,23 @@
 	"services": "Szolgáltatások",
 	"portfolio": "Portfólió",
 	"contact": "Kapcsolat",
+	"contactPage": {
+		"title": "Get in touch!",
+		"subtitle": "Got a question? Starting a project? Write to us!",
+		"nameLabel": "Name",
+		"namePlaceholder": "Full Name",
+		"emailLabel": "Email Address",
+		"emailPlaceholder": "example@gmail.com",
+		"messageLabel": "Message",
+		"messagePlaceholder": "How can we help?",
+		"btnSubmit": "Send Message",
+		"btnSending": "Sending...",
+		"btnSent": "Sent",
+		"successMsg": "Thank you! We will contact you shortly.",
+		"errorMsg": "An error occurred while sending.",
+		"phoneLabel": "Telefonszám",
+		"phonePlaceholder": "+36 20 123 4567"
+	},
 	"navbar": {
 		"about": "Rólunk",
 		"ask_offer": "ENG",
