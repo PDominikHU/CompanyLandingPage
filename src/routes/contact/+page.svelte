@@ -46,15 +46,8 @@
 
 <section
 	id="contact"
-	class="relative overflow-hidden border-t border-gray-100 bg-white py-20 dark:border-gray-800 dark:bg-surface-dark"
+	class="relative flex flex-1 flex-col justify-center overflow-hidden border-t border-gray-100 bg-white py-20 dark:border-gray-800 dark:bg-surface-dark"
 >
-	<div
-		class="pointer-events-none absolute top-0 -left-20 h-96 w-96 rounded-full bg-primary/20 opacity-75 blur-3xl"
-	></div>
-	<div
-		class="pointer-events-none absolute -right-20 bottom-0 h-96 w-96 rounded-full bg-blue-500/20 opacity-45 blur-3xl"
-	></div>
-
 	<div class="relative mx-auto max-w-6xl px-4 lg:grid lg:grid-cols-2 lg:gap-16">
 		<div class="mb-12 flex flex-col justify-center lg:mb-0">
 			<h2 class="text-3xl font-bold text-gray-900 sm:text-4xl dark:text-white">
