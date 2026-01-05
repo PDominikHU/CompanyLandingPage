@@ -222,11 +222,12 @@
 		</h2>
 		<p class="mx-auto mb-10 max-w-2xl text-lg text-blue-100 md:text-xl">{m['cta.subtitle']()}</p>
 		<div class="flex flex-col items-center justify-center gap-6 sm:flex-row">
-			<button
-				class="rounded-full bg-white px-10 py-4 text-lg font-bold text-primary transition-all hover:scale-105 hover:shadow-xl active:scale-95"
+			<a
+				href="/contact"
+				class="inline-flex items-center justify-center rounded-full bg-white px-10 py-4 text-lg font-bold text-primary transition-all hover:scale-105 hover:shadow-xl active:scale-95"
 			>
 				{m['cta.button']()}
-			</button>
+			</a>
 			<span class="font-medium text-white/80">{m['cta.call']()}</span>
 		</div>
 	</div>
