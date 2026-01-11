@@ -5,6 +5,8 @@
 	import CardComponent from '$lib/components/ValuesCard.svelte';
 	import TeamCard from '$lib/components/TeamCard.svelte';
 	import WhyUsCard from '$lib/components/WhyUsCard.svelte';
+	import Testimonials from '$lib/components/Testimonials.svelte';
+	import FAQ from '$lib/components/FAQ.svelte';
 
 	let mounted = $state(false);
 
@@ -48,7 +50,8 @@
 </script>
 
 <svelte:head>
-	<title>Egyedi digitális megoldások | Company</title>
+	<title>{m.home_title()}</title>
+	<meta name="description" content={m.home_meta_desc()} />
 </svelte:head>
 
 <section class="relative overflow-hidden">
@@ -70,11 +73,13 @@
 				</h2>
 				<div in:fade={{ delay: 1000 }} class="mt-4 flex flex-wrap justify-center gap-4">
 					<button
+						onclick={() => (window.location.href = '/contact')}
 						class="animate-glow flex h-12 min-w-40 cursor-pointer items-center justify-center rounded-lg bg-primary px-5 text-base font-bold text-white transition-all hover:scale-105 hover:bg-primary/90"
 					>
-						{m['navbar.ask_offer']()}
+						{m['navbar.lang']()}
 					</button>
 					<button
+						onclick={() => (window.location.href = '/services')}
 						class="flex h-12 min-w-40 cursor-pointer items-center justify-center rounded-lg bg-gray-200 px-5 text-base font-bold text-gray-800 transition-colors hover:bg-gray-300 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600"
 					>
 						{m.services()}
@@ -172,13 +177,27 @@
 				in:fly={{ y: 50, duration: 800, delay: 200 }}
 				class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3"
 			>
-				<TeamCard pic="/images/team/rock.jpg" name="Szabó Dániel" job="lorem" />
-				<TeamCard pic="/images/team/rock.jpg" name="Bánky Botond" job="lorem" />
-				<TeamCard pic="/images/team/rock.jpg" name="Patkó Dominik" job="lorem" />
+				<TeamCard
+					pic="/images/team/rock.jpg"
+					name={m['team.members.member1.name']()}
+					job={m['team.members.member1.job']()}
+				/>
+				<TeamCard
+					pic="/images/team/rock.jpg"
+					name={m['team.members.member2.name']()}
+					job={m['team.members.member2.job']()}
+				/>
+				<TeamCard
+					pic="/images/team/rock.jpg"
+					name={m['team.members.member3.name']()}
+					job={m['team.members.member3.job']()}
+				/>
 			</div>
 		{/if}
 	</div>
 </section>
+
+<Testimonials />
 
 <section
 	data-section="whyus"
@@ -206,6 +225,8 @@
 		{/if}
 	</div>
 </section>
+
+<FAQ />
 
 <section class="relative overflow-hidden bg-primary py-24">
 	<div

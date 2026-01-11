@@ -2,7 +2,9 @@
 	import * as m from '$lib/paraglide/messages';
 </script>
 
-<footer class="mt-auto w-full bg-[#092330] pt-16 pb-8 text-sm text-gray-400">
+<footer
+	class="mt-auto w-full border-t-4 border-primary/20 bg-surface-dark pt-16 pb-8 text-sm text-gray-400"
+>
 	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 		<div class="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
 			<div class="flex flex-col gap-6">
@@ -11,7 +13,9 @@
 			</div>
 
 			<div>
-				<h4 class="mb-6 font-bold tracking-wider text-white uppercase">{m['footer.links']()}</h4>
+				<h4 class="mb-6 font-bold tracking-wider text-white uppercase">
+					{m['footer.links']() ?? 'Gyors linkek'}
+				</h4>
 				<ul class="space-y-4">
 					<li><a href="/" class="transition-colors hover:text-white">{m.home()}</a></li>
 					<li><a href="/services" class="transition-colors hover:text-white">{m.services()}</a></li>
@@ -46,7 +50,9 @@
 							>info@example.com</a
 						>
 					</li>
-					<li class="flex items-center gap-3">📍 Pécs, Magyarország</li>
+					<li class="flex items-center gap-3">
+						📍 {m['footer.location']?.() ?? 'Pécs, Magyarország'}
+					</li>
 				</ul>
 			</div>
 		</div>

@@ -1,6 +1,8 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
 	"hello_world": "Helló, {name} hu-ból!",
+	"home_title": "Egyedi digitális megoldások | Company",
+	"home_meta_desc": "Digitális ügynökség, amely segít vállalkozásának a növekedésben. Webfejlesztés, design és stratégia egy helyen.",
 	"home": "Kezdőlap",
 	"services": "Szolgáltatások",
 	"portfolio": "Portfólió",
@@ -20,12 +22,21 @@
 		"successMsg": "Köszönjük! Hamarosan keresünk.",
 		"errorMsg": "Hiba történt a küldés során.",
 		"phoneLabel": "Telefonszám",
-		"phonePlaceholder": "+36 20 123 4567"
+		"phonePlaceholder": "+36 20 123 4567",
+		"process": {
+			"title": "Mi történik az üzenetküldés után?",
+			"step1_title": "Feldolgozás",
+			"step1_desc": "24 órán belül válaszolunk megkeresésére.",
+			"step2_title": "Konzultáció",
+			"step2_desc": "Egyeztetünk egy rövid, ingyenes beszélgetést.",
+			"step3_title": "Ajánlat",
+			"step3_desc": "Személyre szabott árajánlatot küldünk Önnek."
+		}
 	},
 	"navbar": {
 		"about": "Rólunk",
 		"ask_offer": "ENG",
-		"lang": "Kérj ajánlatot"
+		"lang": "Ajánlatkérés"
 	},
 	"footer": {
 		"further_information": "További Információk",
@@ -36,16 +47,17 @@
 		"reviews": "Vélemények",
 		"rights": "Minden jog fenntartva",
 		"privacy": "Adatvédelem",
-		"terms": "Felhasználási feltételek"
+		"terms": "Felhasználási feltételek",
+		"location": "Pécs, Magyarország"
 	},
 	"about": "Rólunk",
 	"hero": {
-		"title": "Digitális Növekedést Építünk",
-		"subtitle": "Modern, professzionális weboldalakat készítünk, amelyek valódi üzleti eredményeket hoznak. Segítünk, hogy vállalkozása kiemelkedjen a digitális térben."
+		"title": "Digitális Exellencia, Korlátok Nélkül",
+		"subtitle": "Nem csak weboldalakat készítünk, hanem digitális élményeket. Prémium fejlesztés, tűpontos stratégia és design, ami elad."
 	},
 	"mission": {
-		"title": "Küldetésünk",
-		"text": "Azért alapítottuk cégünket, mert hiszünk abban, hogy minden kis- és középvállalkozás megérdemli a professzionális online jelenlétet. Célunk, hogy a legmodernebb technológiákat és üzleti szemléletű megoldásokat kínálva, hosszú távú, megbízható partnerei legyünk ügyfeleinknek digitális útjukon."
+		"title": "A Jövőt Építjük",
+		"text": "Ügynökségünk azzal a céllal jött létre, hogy a legújabb webes technológiákat elérhetővé tegye a vállalkozások számára. Hiszünk a letisztult kód és a lenyűgöző design erejében. Nem sablonokban gondolkodunk, hanem egyedi, skálázható rendszereket építünk, melyek hosszú távon szolgálják partnereink növekedését."
 	},
 	"values": {
 		"title": "Értékeink",
@@ -73,7 +85,21 @@
 	},
 	"team": {
 		"title": "Csapatunk",
-		"subtitle": "Szenvedélyes szakértők csapata, akik elkötelezettek az Ön sikeréért."
+		"subtitle": "Szenvedélyes szakértők csapata, akik elkötelezettek az Ön sikeréért.",
+		"members": {
+			"member1": {
+				"name": "Szabó Dániel",
+				"job": "Lead Developer"
+			},
+			"member2": {
+				"name": "Bánky Botond",
+				"job": "Creative Director"
+			},
+			"member3": {
+				"name": "Patkó Dominik",
+				"job": "Strategic Manager"
+			}
+		}
 	},
 	"whyus": {
 		"title": "Miért minket válasszon?",
@@ -91,10 +117,136 @@
 		"card6_t": "SEO optimalizálás",
 		"card6_d": "Technikailag felkészítjük oldalát, hogy a Google is szeresse."
 	},
+	"stats": {
+		"projects": "Sikeres Projekt",
+		"experience": "Év Tapasztalat",
+		"clients": "Elégedett Ügyfél",
+		"support": "Hónap Garancia"
+	},
+	"testimonials": {
+		"title": "Ügyfeleink Mondták",
+		"subtitle": "A bizalom a legfontosabb fizetőeszközünk.",
+		"review1_text": "Döbbenetesen gyorsak és precízek. A weboldalunk látogatottsága 200%-kal nőtt az új design bevezetése óta.",
+		"review1_name": "Kovács Péter",
+		"review1_role": "CEO, TechStart Kft.",
+		"review2_text": "Végre egy csapat, aki nem csak bólogat, hanem konstruktív ötletekkel segíti az üzleti céljainkat.",
+		"review2_name": "Nagy Anna",
+		"review2_role": "Marketing Igazgató, StyleHub",
+		"review3_text": "A webshopunk sosem működött ilyen stabilan. A konverzió mérhetően javult a UX fejlesztésnek köszönhetően.",
+		"review3_name": "Tóth Gábor",
+		"review3_role": "Tulajdonos, GreenMarket"
+	},
+	"faq": {
+		"title": "Gyakori Kérdések",
+		"subtitle": "Minden, amit tudni érdemes a közös munka előtt.",
+		"q1": "Mennyi idő alatt készül el egy weboldal?",
+		"a1": "Ez a projekt összetettségétől függ. Egy egyszerűbb bemutatkozó oldal általában 1-2 hét, míg egy komplexebb webshop vagy egyedi rendszer 4-8 hetet is igénybe vehet.",
+		"q2": "Mennyibe kerül egy weboldal?",
+		"a2": "Minden projekt egyedi, így az árazás is változó. Kérjen ingyenes konzultációt, ahol felmérjük igényeit és pontos árajánlatot adunk. Rejtett költségek nincsenek.",
+		"q3": "Segítenek a domain és tárhely ügyintézésben?",
+		"a3": "Természetesen! Teljes körű ügyintézést vállalunk, Önnek csak a nevekre kell rábólintania.",
+		"q4": "Mobilbarát lesz az oldalam?",
+		"a4": "Igen, minden esetben 'mobile-first' szemlélettel dolgozunk. Weboldala tökéletesen fog megjelenni telefonon, tableten és monitoron is.",
+		"q5": "Kell-e előleget fizetni?",
+		"a5": "Általában 40% előleget kérünk a munka megkezdése előtt, a fennmaradó részt pedig az átadáskor, amikor Ön már teljesen elégedett az eredménnyel."
+	},
 	"cta": {
 		"title": "Készen áll a digitális szintre lépésre?",
 		"subtitle": "Beszéljük meg elképzeléseit egy ingyenes konzultáció keretében, és építsünk valami maradandót!",
 		"button": "Ingyenes konzultáció kérése",
 		"call": "vagy hívjon minket bizalommal"
+	},
+	"portfolio_page": {
+		"title": "Munkáink",
+		"subtitle": "Válogatás legújabb projektjeinkből. Büszkék vagyunk rá, hogy digitális megoldásainkkal valódi értéket teremthetünk ügyfeleinknek.",
+		"cta": "Megtekintés",
+		"project1": {
+			"title": "StyleHub Webshop",
+			"category": "E-kereskedelem",
+			"description": "Prémium divat webáruház egyedi szűrőrendszerrel és villámgyors fizetési folyamattal. 30%-os konverzió növekedés az indulás után.",
+			"alt": "Divat webshop borítókép"
+		},
+		"project2": {
+			"title": "Dr. Kovács Magánrendelő",
+			"category": "Egészségügy",
+			"description": "Elegáns bemutatkozó oldal online időpontfoglaló rendszerrel integrálva. Automatikus emlékeztetők és páciens kezelés.",
+			"alt": "Orvosi rendelő weboldal"
+		}
+	},
+	"demo_project": {
+		"title": "Company Landing Page",
+		"category": "Webfejlesztés & Design",
+		"description": "Ez a portfólió oldal példája. Modern technológiákkal, reszponzív dizájnnal és SEO optimalizálással készült.",
+		"alt": "Projekt borítókép"
+	},
+	"services_page": {
+		"title": "Szolgáltatásaink",
+		"subtitle": "Kreatív és technológiai megoldások, melyek a jövőbe repítik vállalkozásodat.",
+		"meta_desc": "Professzionális weboldal készítés, webshop fejlesztés, UI/UX design és SEO szolgáltatások.",
+		"list": {
+			"webdev": {
+				"title": "Egyedi Webfejlesztés",
+				"desc": "Villámgyors, biztonságos és skálázható weboldalak, amelyek pontosan az Ön igényeire vannak szabva."
+			},
+			"design": {
+				"title": "UI/UX Design",
+				"desc": "Felhasználóközpontú tervezés, amely lenyűgöző vizuális élményt és könnyű kezelhetőséget biztosít."
+			},
+			"ecommerce": {
+				"title": "Webshop Fejlesztés",
+				"desc": "Professzionális e-kereskedelmi megoldások, amelyek konverzióra vannak optimalizálva."
+			},
+			"seo": {
+				"title": "SEO & Marketing",
+				"desc": "Keresőoptimalizálás, hogy ügyfelei könnyen megtalálják Önt a Google találati listáján."
+			}
+		},
+		"process": {
+			"title": "Hogyan dolgozunk?",
+			"step1": "Konzultáció",
+			"step1_desc": "Megismerjük céljait és igényeit egy ingyenes beszélgetés keretében.",
+			"step2": "Tervezés",
+			"step2_desc": "Elkészítjük a drótvázakat és a designt, amit Önnel közösen finomítunk.",
+			"step3": "Fejlesztés",
+			"step3_desc": "Lekódoljuk az oldalt a legmodernebb technológiák használatával.",
+			"step4": "Átadás & Support",
+			"step4_desc": "Élesítjük az oldalt, és megtanítjuk a használatát. Nem engedjük el a kezét."
+		},
+		"pricing": {
+			"title": "Csomagajánlatok",
+			"subtitle": "Átlátható árazás rejtett költségek nélkül.",
+			"basic": {
+				"title": "Bemutatkozó Oldal",
+				"price": "Kérjen ajánlatot",
+				"feature1": "Egyedi Design",
+				"feature2": "Mobilbarát megjelenés",
+				"feature3": "Kapcsolatfelvételi űrlap",
+				"feature4": "Google Térkép integráció",
+				"feature5": "Alap SEO beállítások"
+			},
+			"pro": {
+				"title": "Üzleti Weboldal",
+				"price": "Kérjen ajánlatot",
+				"feature1": "Minden ami a Basic-ben",
+				"feature2": "Több aloldal (pl. Szolgáltatások, Blog)",
+				"feature3": "Tartalomkezelő rendszer (CMS)",
+				"feature4": "Bővített SEO",
+				"feature5": "Analitika bekötése"
+			},
+			"enterprise": {
+				"title": "Egyedi Rendszer / Webshop",
+				"price": "Egyedi árazás",
+				"feature1": "Teljesen egyedi funkcionalitás",
+				"feature2": "Webshop funkciók",
+				"feature3": "Bankkártyás fizetés",
+				"feature4": "Raktárkezelő integráció",
+				"feature5": "Prémium támogatás"
+			}
+		},
+		"cta": {
+			"title": "Nem találja amit keres?",
+			"text": "Minden projekt egyedi. Keressen minket bizalommal, és kidolgozunk egy személyre szabott megoldást az Ön számára.",
+			"button": "Egyedi Ajánlatkérés"
+		}
 	}
 }

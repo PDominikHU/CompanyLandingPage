@@ -1,9 +1,12 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
 	"hello_world": "Hello, {name} from hu!",
+	"home_title": "Custom Digital Solutions | Company",
+	"home_meta_desc": "Digital agency helping your business grow. Web development, design, and strategy all in one place.",
 	"home": "Home",
 	"services": "Services",
 	"portfolio": "Portfolio",
+	"contact": "Contact",
 	"contactPage": {
 		"title": "Get in touch!",
 		"subtitle": "Got a question? Starting a project? Write to us!",
@@ -19,11 +22,21 @@
 		"successMsg": "Thank you! We will contact you shortly.",
 		"errorMsg": "An error occurred while sending.",
 		"phoneLabel": "Phone number",
-		"phonePlaceholder": "+36 20 123 4567"
+		"phonePlaceholder": "+36 20 123 4567",
+		"process": {
+			"title": "What happens after you send a message?",
+			"step1_title": "Processing",
+			"step1_desc": "We will reply to your inquiry within 24 hours.",
+			"step2_title": "Consultation",
+			"step2_desc": "We schedule a short, free conversation.",
+			"step3_title": "Offer",
+			"step3_desc": "We send you a personalized price quote."
+		}
 	},
 	"navbar": {
 		"about": "About Us",
-		"ask_offer": "HUN"
+		"ask_offer": "HUN",
+		"lang": "Get a Quote"
 	},
 	"footer": {
 		"further_information": "Further Information",
@@ -34,16 +47,17 @@
 		"reviews": "Reviews",
 		"rights": "All rights reserved",
 		"privacy": "Privacy Policy",
-		"terms": "Terms and Conditions"
+		"terms": "Terms and Conditions",
+		"location": "Pécs, Hungary"
 	},
 	"about": "About Us",
 	"hero": {
-		"title": "Building Digital Growth",
-		"subtitle": "We create modern, professional websites that deliver real business results. We help your business stand out in the digital space."
+		"title": "Digital Excellence, Without Limits",
+		"subtitle": "We don't just build websites; we craft digital experiences. Premium development, precise strategy, and design that converts."
 	},
 	"mission": {
-		"title": "Our Mission",
-		"text": "We founded our company because we believe that every small and medium-sized business deserves a professional online presence. Our goal is to be a long-term, reliable partner for our clients on their digital journey by offering the latest technologies and business-oriented solutions."
+		"title": "Building the Future",
+		"text": "Our agency was founded to make the latest web technologies accessible to businesses. We believe in the power of clean code and stunning design. We don't think in templates; we build unique, scalable systems that serve our partners' long-term growth."
 	},
 	"values": {
 		"title": "Our Values",
@@ -71,7 +85,21 @@
 	},
 	"team": {
 		"title": "Our Team",
-		"subtitle": "A team of passionate experts dedicated to your success."
+		"subtitle": "A team of passionate experts dedicated to your success.",
+		"members": {
+			"member1": {
+				"name": "Dániel Szabó",
+				"job": "Lead Developer"
+			},
+			"member2": {
+				"name": "Botond Bánky",
+				"job": "Creative Director"
+			},
+			"member3": {
+				"name": "Dominik Patkó",
+				"job": "Strategic Manager"
+			}
+		}
 	},
 	"whyus": {
 		"title": "Why Choose Us?",
@@ -89,10 +117,136 @@
 		"card6_t": "SEO Optimization",
 		"card6_d": "We prepare your site technically so that Google will love it too."
 	},
+	"stats": {
+		"projects": "Successful Projects",
+		"experience": "Years Experience",
+		"clients": "Happy Clients",
+		"support": "Months Warranty"
+	},
+	"testimonials": {
+		"title": "Client Stories",
+		"subtitle": "Trust is our most valuable currency.",
+		"review1_text": "Incredibly fast and precise. Our website traffic has increased by 200% since the launch of the new design.",
+		"review1_name": "Peter Kovacs",
+		"review1_role": "CEO, TechStart Ltd.",
+		"review2_text": "Finally, a team that doesn't just nod but helps our business goals with constructive ideas.",
+		"review2_name": "Anna Nagy",
+		"review2_role": "Marketing Director, StyleHub",
+		"review3_text": "Our webshop has never been this stable. Conversion has measurably improved thanks to the UX development.",
+		"review3_name": "Gabor Toth",
+		"review3_role": "Owner, GreenMarket"
+	},
+	"faq": {
+		"title": "Frequent Questions",
+		"subtitle": "Everything you need to know before we start working together.",
+		"q1": "How long does it take to build a website?",
+		"a1": "It depends on the complexity of the project. A simple landing page usually takes 1-2 weeks, while a more complex webshop or custom system can take 4-8 weeks.",
+		"q2": "How much does a website cost?",
+		"a2": "Every project is unique, so pricing varies. Request a free consultation where we assess your needs and provide an exact quote. No hidden costs.",
+		"q3": "Do you help with domain and hosting?",
+		"a3": "Absolutely! We handle everything, you just have to approve the names.",
+		"q4": "Will my site be mobile-friendly?",
+		"a4": "Yes, we always work with a 'mobile-first' approach. Your website will look perfect on phones, tablets, and monitors.",
+		"q5": "Do I need to pay a deposit?",
+		"a5": "We usually request a 40% deposit before starting work, and the remainder upon delivery when you are fully satisfied with the result."
+	},
 	"cta": {
 		"title": "Ready to step up to the digital level?",
 		"subtitle": "Let's discuss your ideas in a free consultation and build something lasting!",
 		"button": "Request a Free Consultation",
 		"call": "or call us with confidence"
+	},
+	"portfolio_page": {
+		"title": "Our Work",
+		"subtitle": "A selection of our latest projects. We are proud to create real value for our clients with our digital solutions.",
+		"cta": "View Project",
+		"project1": {
+			"title": "StyleHub Webshop",
+			"category": "E-commerce",
+			"description": "Premium fashion webstore with custom filtering system and lightning-fast checkout. 30% conversion increase after launch.",
+			"alt": "Fashion webshop cover"
+		},
+		"project2": {
+			"title": "Dr. Kovacs Clinic",
+			"category": "Healthcare",
+			"description": "Elegant introduction site integrated with an online appointment booking system. Automated reminders and patient management.",
+			"alt": "Medical clinic website"
+		}
+	},
+	"demo_project": {
+		"title": "Company Landing Page",
+		"category": "Web Development & Design",
+		"description": "This is an example portfolio page. Built with modern technologies, responsive design, and SEO optimization.",
+		"alt": "Project cover image"
+	},
+	"services_page": {
+		"title": "Our Services",
+		"subtitle": "Creative and technological solutions that propel your business into the future.",
+		"meta_desc": "Professional web development, webshop development, UI/UX design, and SEO services.",
+		"list": {
+			"webdev": {
+				"title": "Custom Web Development",
+				"desc": "Lightning-fast, secure, and scalable websites tailored exactly to your needs."
+			},
+			"design": {
+				"title": "UI/UX Design",
+				"desc": "User-centric design providing stunning visual experiences and ease of use."
+			},
+			"ecommerce": {
+				"title": "E-commerce Development",
+				"desc": "Professional e-commerce solutions optimized for conversion."
+			},
+			"seo": {
+				"title": "SEO & Marketing",
+				"desc": "Search engine optimization so your customers can easily find you on Google."
+			}
+		},
+		"process": {
+			"title": "How We Work",
+			"step1": "Consultation",
+			"step1_desc": "We get to know your goals and needs in a free conversation.",
+			"step2": "Design",
+			"step2_desc": "We create wireframes and designs, refining them together with you.",
+			"step3": "Development",
+			"step3_desc": "We code the site using the latest technologies.",
+			"step4": "Launch & Support",
+			"step4_desc": "We launch the site and teach you how to use it. We won't let go of your hand."
+		},
+		"pricing": {
+			"title": "Packages",
+			"subtitle": "Transparent pricing with no hidden costs.",
+			"basic": {
+				"title": "Landing Page",
+				"price": "Ask for offer",
+				"feature1": "Custom Design",
+				"feature2": "Mobile-friendly",
+				"feature3": "Contact Form",
+				"feature4": "Google Maps Integration",
+				"feature5": "Basic SEO"
+			},
+			"pro": {
+				"title": "Business Website",
+				"price": "Ask for offer",
+				"feature1": "Everything in Basic",
+				"feature2": "Multiple pages (e.g. Services, Blog)",
+				"feature3": "Content Management System (CMS)",
+				"feature4": "Advanced SEO",
+				"feature5": "Analytics Integration"
+			},
+			"enterprise": {
+				"title": "Custom System / Webshop",
+				"price": "Custom pricing",
+				"feature1": "Fully custom functionality",
+				"feature2": "E-commerce features",
+				"feature3": "Credit card payment",
+				"feature4": "Inventory management integration",
+				"feature5": "Premium support"
+			}
+		},
+		"cta": {
+			"title": "Can't find what you're looking for?",
+			"text": "Every project is unique. Contact us with confidence, and we will work out a personalized solution for you.",
+			"button": "Request Custom Offer"
+		}
 	}
 }
