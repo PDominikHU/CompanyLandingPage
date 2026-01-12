@@ -1,6 +1,5 @@
 <script lang="ts">
 	import * as m from '$lib/paraglide/messages';
-	import { fade } from 'svelte/transition';
 
 	// Helper to get localized quotes
 	const getReviews = () => [
@@ -34,7 +33,7 @@
 		</div>
 
 		<div class="grid gap-8 md:grid-cols-3">
-			{#each getReviews() as review, i}
+			{#each getReviews() as review, i (i)}
 				<div
 					data-aos="fade-up"
 					data-aos-delay={i * 100}

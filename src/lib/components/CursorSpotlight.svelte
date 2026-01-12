@@ -1,6 +1,4 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-
 	let x = $state(0);
 	let y = $state(0);
 

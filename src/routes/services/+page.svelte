@@ -1,6 +1,6 @@
 <script lang="ts">
 	import * as m from '$lib/paraglide/messages';
-	import { fade, fly, slide } from 'svelte/transition';
+	import { fly } from 'svelte/transition';
 	import { onMount } from 'svelte';
 
 	let mounted = false;
@@ -96,7 +96,7 @@
 
 	<section class="mx-auto max-w-7xl px-6 py-12 lg:px-8">
 		<div class="grid grid-cols-1 gap-8 md:grid-cols-2">
-			{#each services as service, i}
+			{#each services as service, i (service.id)}
 				{#if mounted}
 					<div
 						in:fly={{ y: 30, duration: 800, delay: 300 + i * 100 }}
@@ -131,7 +131,7 @@
 			</div>
 
 			<div class="grid grid-cols-1 gap-8 md:grid-cols-4">
-				{#each steps as step, i}
+				{#each steps as step, i (i)}
 					{#if mounted}
 						<div in:fly={{ y: 20, duration: 800, delay: 600 + i * 150 }} class="relative">
 							<!-- Connector Line (Desktop) -->
