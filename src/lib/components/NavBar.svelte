@@ -3,6 +3,7 @@
 	import { page } from '$app/state';
 	import { slide } from 'svelte/transition';
 	import { setLocale, localizeHref, getLocale } from '$lib/paraglide/runtime.js';
+	import ThemeSwitch from '$lib/components/ThemeSwitch.svelte';
 
 	let isMobileMenuOpen = $state(false);
 
@@ -25,7 +26,7 @@
 </script>
 
 <nav
-	class="sticky top-0 z-50 border-b border-gray-100 bg-white/90 backdrop-blur-md transition-colors dark:border-gray-800 dark:bg-background-dark/95"
+	class="sticky top-0 z-50 border-b border-gray-100 bg-white/90 backdrop-blur-md dark:border-gray-800 dark:bg-background-dark/95"
 >
 	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 		<div class="flex h-16 items-center justify-between">
@@ -73,6 +74,10 @@
 						class="h-6 w-6 rounded-sm object-cover shadow-sm"
 					/>
 				</button>
+
+				<div class="relative ml-2 h-10 w-10">
+					<ThemeSwitch />
+				</div>
 			</div>
 
 			<div class="flex md:hidden">
@@ -132,22 +137,27 @@
 				<div class="my-4 border-t border-gray-100 dark:border-gray-800"></div>
 
 				<div class="flex items-center justify-between px-2">
-					<span class="text-sm font-medium text-gray-600 dark:text-gray-400">
-						{isEnglish ? 'Language' : 'Nyelv'}
-					</span>
+					<div class="flex items-center gap-4">
+						<span class="text-sm font-medium text-gray-600 dark:text-gray-400">
+							{isEnglish ? 'Language' : 'Nyelv'}
+						</span>
+						<button
+							onclick={handleLanguageToggle}
+							class="flex items-center justify-center rounded-md p-1 transition-transform duration-200 hover:scale-110 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+							aria-label={isEnglish ? 'Váltás magyarra' : 'Switch to English'}
+							title={isEnglish ? 'Váltás magyarra' : 'Switch to English'}
+						>
+							<img
+								src={isEnglish ? '/images/flags/hungary.svg' : '/images/flags/uk.svg'}
+								alt={isEnglish ? 'Magyar' : 'English'}
+								class="h-6 w-6 rounded-sm object-cover shadow-sm"
+							/>
+						</button>
+					</div>
 
-					<button
-						onclick={handleLanguageToggle}
-						class="flex items-center justify-center rounded-md p-1 transition-transform duration-200 hover:scale-110 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
-						aria-label={isEnglish ? 'Váltás magyarra' : 'Switch to English'}
-						title={isEnglish ? 'Váltás magyarra' : 'Switch to English'}
-					>
-						<img
-							src={isEnglish ? '/images/flags/hungary.svg' : '/images/flags/uk.svg'}
-							alt={isEnglish ? 'Magyar' : 'English'}
-							class="h-6 w-6 rounded-sm object-cover shadow-sm"
-						/>
-					</button>
+					<div class="relative h-8 w-8">
+						<ThemeSwitch variant="button" />
+					</div>
 				</div>
 			</div>
 		</div>
@@ -168,7 +178,7 @@
 	}
 	.nav-link:hover,
 	.nav-link.active {
-		color: #136dec;
+		color: var(--color-primary);
 	}
 	:global(.dark) .nav-link:hover,
 	:global(.dark) .nav-link.active {
@@ -181,7 +191,7 @@
 		left: 1rem;
 		right: 1rem;
 		height: 2px;
-		background-color: #136dec;
+		background-color: var(--color-primary);
 		transform: scaleX(0);
 		transition: transform 0.3s ease-out;
 		transform-origin: left;
@@ -196,17 +206,17 @@
 		padding: 1rem 0;
 		font-size: 1.125rem;
 		font-weight: 700;
-		border-bottom: 1px solid #f3f4f6;
+		border-bottom: 1px solid var(--color-background-light);
 		color: #374151;
 	}
 	.mobile-link.active {
-		color: #136dec;
+		color: var(--color-primary);
 	}
 	:global(.dark) .mobile-link {
 		color: #ffffff;
-		border-bottom-color: #1f2937;
+		border-bottom-color: var(--color-surface-dark);
 	}
 	:global(.dark) .mobile-link.active {
-		color: #3b82f6;
+		color: var(--color-primary);
 	}
 </style>

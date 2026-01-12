@@ -31,7 +31,7 @@
 			} else {
 				const data = await response.json();
 
-				// MEGOLDÁS: Definiáljuk a hiba típusát 'any' helyett
+				// Error handling
 				errorMessage =
 					data.errors?.map((error: { message: string }) => error.message).join(', ') ||
 					(m['contactPage.errorMsg']?.() ?? 'Hiba történt.');
@@ -182,5 +182,55 @@
 				</p>
 			{/if}
 		</form>
+	</div>
+
+	<!-- Process / Expectation Section -->
+	<div class="mx-auto mt-24 max-w-4xl px-4 text-center">
+		<h3 class="text-2xl font-bold text-gray-900 dark:text-white">
+			{m['contactPage.process.title']?.() ?? 'Mi történik az üzenetküldés után?'}
+		</h3>
+		<div class="mt-12 grid gap-8 md:grid-cols-3">
+			<div class="flex flex-col items-center">
+				<div
+					class="flex h-16 w-16 items-center justify-center rounded-full bg-blue-100 text-2xl font-bold text-primary dark:bg-primary/20"
+				>
+					1
+				</div>
+				<h4 class="mt-6 text-lg font-bold text-gray-900 dark:text-white">
+					{m['contactPage.process.step1_title']?.() ?? 'Feldolgozás'}
+				</h4>
+				<p class="mt-2 text-gray-600 dark:text-gray-400">
+					{m['contactPage.process.step1_desc']?.() ?? '24 órán belül válaszolunk megkeresésére.'}
+				</p>
+			</div>
+			<div class="flex flex-col items-center">
+				<div
+					class="flex h-16 w-16 items-center justify-center rounded-full bg-blue-100 text-2xl font-bold text-primary dark:bg-primary/20"
+				>
+					2
+				</div>
+				<h4 class="mt-6 text-lg font-bold text-gray-900 dark:text-white">
+					{m['contactPage.process.step2_title']?.() ?? 'Konzultáció'}
+				</h4>
+				<p class="mt-2 text-gray-600 dark:text-gray-400">
+					{m['contactPage.process.step2_desc']?.() ??
+						'Egyeztetünk egy rövid, ingyenes beszélgetést.'}
+				</p>
+			</div>
+			<div class="flex flex-col items-center">
+				<div
+					class="flex h-16 w-16 items-center justify-center rounded-full bg-blue-100 text-2xl font-bold text-primary dark:bg-primary/20"
+				>
+					3
+				</div>
+				<h4 class="mt-6 text-lg font-bold text-gray-900 dark:text-white">
+					{m['contactPage.process.step3_title']?.() ?? 'Ajánlat'}
+				</h4>
+				<p class="mt-2 text-gray-600 dark:text-gray-400">
+					{m['contactPage.process.step3_desc']?.() ??
+						'Személyre szabott árajánlatot küldünk Önnek.'}
+				</p>
+			</div>
+		</div>
 	</div>
 </section>
