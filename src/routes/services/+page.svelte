@@ -66,7 +66,6 @@
 </svelte:head>
 
 <div class="min-h-screen bg-white pb-20 dark:bg-background-dark">
-	<!-- Hero Section -->
 	<section class="relative overflow-hidden pt-32 pb-16 md:pt-48 md:pb-32">
 		<div class="absolute inset-x-0 top-0 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
 			<div
@@ -95,7 +94,6 @@
 		</div>
 	</section>
 
-	<!-- Services Grid -->
 	<section class="mx-auto max-w-7xl px-6 py-12 lg:px-8">
 		<div class="grid grid-cols-1 gap-8 md:grid-cols-2">
 			{#each services as service, i}
@@ -121,9 +119,7 @@
 		</div>
 	</section>
 
-	<!-- Process Section -->
 	<section class="relative overflow-hidden bg-gray-900 py-24 text-white">
-		<!-- Background pattern -->
 		<div
 			class="absolute top-0 left-0 h-full w-full opacity-10"
 			style="background-image: radial-gradient(#4f46e5 1px, transparent 1px); background-size: 32px 32px;"
@@ -161,7 +157,6 @@
 		</div>
 	</section>
 
-	<!-- Pricing Section -->
 	<section class="mx-auto max-w-7xl px-6 py-24 lg:px-8">
 		<div class="mb-16 text-center">
 			<h2 class="text-3xl font-bold text-gray-900 dark:text-white">
@@ -173,7 +168,6 @@
 		</div>
 
 		<div class="grid grid-cols-1 gap-8 md:grid-cols-3">
-			<!-- Basic -->
 			<div
 				class="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm transition-all hover:shadow-xl dark:border-gray-800 dark:bg-surface-dark"
 			>
@@ -212,8 +206,6 @@
 					{m['services_page.cta.button']()}
 				</a>
 			</div>
-
-			<!-- Pro -->
 			<div
 				class="relative rounded-3xl border-2 border-primary bg-white p-8 shadow-xl dark:border-primary dark:bg-surface-dark"
 			>
@@ -258,7 +250,6 @@
 				</a>
 			</div>
 
-			<!-- Enterprise -->
 			<div
 				class="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm transition-all hover:shadow-xl dark:border-gray-800 dark:bg-surface-dark"
 			>

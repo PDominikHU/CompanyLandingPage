@@ -20,14 +20,12 @@
 			x = event.clientX;
 			y = event.clientY;
 		} else {
-			// Fallback for the cord pull (approximate location of the knob)
 			const cordKnob = document.querySelector('.theme-knob');
 			if (cordKnob) {
 				const rect = cordKnob.getBoundingClientRect();
 				x = rect.left + rect.width / 2;
 				y = rect.top + rect.height / 2;
 			} else {
-				// Fallback to top right area if knob not found
 				x = window.innerWidth - 80;
 				y = 80;
 			}
@@ -37,7 +35,6 @@
 			Math.max(x, window.innerWidth - x),
 			Math.max(y, window.innerHeight - y)
 		);
-		// ...
 
 		const transition = document.startViewTransition(async () => {
 			await updateTheme(!isDarkNow);
@@ -82,7 +79,6 @@
 		}
 	}
 
-	// Initialize theme from localStorage
 	onMount(() => {
 		if (typeof window !== 'undefined') {
 			const savedTheme = localStorage.getItem('theme');
@@ -103,13 +99,11 @@
 
 {#if variant === 'cord'}
 	<div class="relative z-50 ml-4 hidden md:block">
-		<!-- The Cord Line -->
 		<div
 			class="absolute left-1/2 w-0.5 origin-top bg-gray-400 transition-all duration-300 dark:bg-gray-600"
 			style="height: {isPulling ? '60px' : '40px'}; top: -20px; transform: translateX(-50%);"
 		></div>
 
-		<!-- The Handle / Knob -->
 		<button
 			class="theme-knob absolute left-1/2 box-content h-6 w-6 -translate-x-1/2 rounded-full border-2 border-gray-300 bg-white shadow-md transition-all duration-300 outline-none hover:bg-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:hover:bg-gray-700"
 			style="top: {isPulling ? '40px' : '20px'};"
@@ -118,7 +112,6 @@
 			onmouseleave={() => (isPulling = false)}
 			aria-label="Toggle Theme"
 		>
-			<!-- Icon inside knob -->
 			<span class="flex h-full w-full items-center justify-center text-xs">
 				{#if isDark}
 					🌙
@@ -129,7 +122,6 @@
 		</button>
 	</div>
 {:else}
-	<!-- Simple Button Variant for Mobile -->
 	<button
 		onclick={(e) => toggleTheme(e)}
 		class="flex h-full w-full items-center justify-center rounded-md p-1 transition-transform duration-200 hover:scale-110 focus:ring-2 focus:ring-primary focus:outline-none"

@@ -8,7 +8,6 @@
 			content="Egyedi webfejlesztés és modern webdesign profiktól. Gyors, keresőoptimalizált weboldalak készítése garanciával. Kattintson és növelje üzleti bevételét velünk!"
 		/>
 		<script>
-			// Prevent FOUC (Flash of Unstyled Content) for Dark Mode
 			(function () {
 				try {
 					const localTheme = localStorage.getItem('theme');
@@ -22,9 +21,7 @@
 					if (localTheme === 'dark') {
 						document.documentElement.classList.add('dark');
 					}
-				} catch (e) {
-					// Fail silently
-				}
+				} catch (e) {}
 			})();
 		</script>
 		%sveltekit.head%

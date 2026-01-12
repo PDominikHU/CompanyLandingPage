@@ -75,7 +75,6 @@
 					/>
 				</button>
 
-				<!-- Theme Toggle Lamp Cord -->
 				<div class="relative ml-2 h-10 w-10">
 					<ThemeSwitch />
 				</div>
@@ -156,7 +155,6 @@
 						</button>
 					</div>
 
-					<!-- Mobile Theme Toggle (Simple Button) -->
 					<div class="relative h-8 w-8">
 						<ThemeSwitch variant="button" />
 					</div>

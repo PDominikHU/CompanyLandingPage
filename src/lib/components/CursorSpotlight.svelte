@@ -12,13 +12,11 @@
 
 <svelte:window onmousemove={handleMouseMove} />
 
-<!-- Light Mode Spotlight -->
 <div
 	class="pointer-events-none fixed inset-0 z-30 opacity-40 transition-opacity duration-300 dark:hidden"
 	style="background: radial-gradient(600px circle at {x}px {y}px, rgba(99, 102, 241, 0.15), transparent 80%);"
 ></div>
 
-<!-- Dark Mode Spotlight -->
 <div
 	class="pointer-events-none fixed inset-0 z-30 hidden opacity-30 transition-opacity duration-300 dark:block"
 	style="background: radial-gradient(600px circle at {x}px {y}px, rgba(99, 102, 241, 0.15), transparent 80%);"

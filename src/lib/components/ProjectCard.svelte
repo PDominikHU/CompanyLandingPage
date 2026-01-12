@@ -12,7 +12,6 @@
 <div
 	class="group relative flex flex-col overflow-hidden rounded-2xl bg-gray-50 transition-all hover:-translate-y-1 hover:shadow-2xl dark:bg-surface-dark"
 >
-	<!-- Image / Placeholder -->
 	<div class="relative aspect-video overflow-hidden bg-gray-200">
 		{#if image}
 			<img
@@ -28,13 +27,11 @@
 			</div>
 		{/if}
 
-		<!-- Overlay -->
 		<div
 			class="absolute inset-0 bg-black/0 transition-colors duration-300 group-hover:bg-black/10"
 		></div>
 	</div>
 
-	<!-- Content -->
 	<div class="flex flex-1 flex-col p-6">
 		<div class="mb-4">
 			<span

@@ -40,7 +40,6 @@
 					data-aos-delay={i * 100}
 					class="relative rounded-2xl bg-white p-8 shadow-sm transition-transform hover:-translate-y-2 dark:bg-surface-dark"
 				>
-					<!-- Quote Icon -->
 					<div class="absolute top-6 right-8 font-serif text-6xl text-primary/10">"</div>
 
 					<p class="relative z-10 mb-6 text-lg leading-relaxed font-light italic">
